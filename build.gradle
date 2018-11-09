@@ -1,0 +1,31 @@
+apply plugin: 'groovy'
+apply plugin: 'org.unbroken-dome.test-sets'
+
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            'org.codehaus.groovy:groovy-all:2.5.3'
+    )
+    testCompile (
+            'junit:junit:4.12',
+// https://mvnrepository.com/artifact/org.spockframework/spock-core
+        'org.spockframework:spock-core:1.2-RC1-groovy-2.5'
+    )
+}
+ 
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath(
+                'org.unbroken-dome.gradle-plugins:gradle-testsets-plugin:1.4.2'
+        )
+    }
+}

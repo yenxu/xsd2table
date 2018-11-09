@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SimpleTypeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2018-11-08T20:32:46" hostname="Yens-MacBook-Pro.local" time="131.058">
+  <properties/>
+  <testcase name="parsing XSD ok" classname="SimpleTypeTest" time="131.058">
+    <failure message="Condition not satisfied:&#10;&#10;simpleType.maxInclusive == &quot;999999999999&quot;&#10;|          |            |&#10;|          |            false&#10;|          999999999999999999999999&#10;&lt;SimpleType@5a656420 enumerations=[] baseType=xsd:string maxLength=20 pattern= minLength= minInclusive=0 maxInclusive=999999999999999999999999 minExclusive=0 totalDigits=4 name=Telefonnummer&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+simpleType.maxInclusive == &quot;999999999999&quot;
+|          |            |
+|          |            false
+|          999999999999999999999999
+&lt;SimpleType@5a656420 enumerations=[] baseType=xsd:string maxLength=20 pattern= minLength= minInclusive=0 maxInclusive=999999999999999999999999 minExclusive=0 totalDigits=4 name=Telefonnummer&gt;
+
+	at SimpleTypeTest.parsing XSD ok(SimpleTypeTest.groovy:36)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
